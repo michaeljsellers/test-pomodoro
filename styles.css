@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.controls button {
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+#start {
+    background-color: #00b894;  /* Mint green */
+}
+
+#start:hover {
+    background-color: #00a187;
+    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.2);
+}
+
+#reset {
+    background-color: #ff7675;  /* Coral red */
+}
+
+#reset:hover {
+    background-color: #e66867;
+    box-shadow: 0 5px 15px rgba(255, 118, 117, 0.2);
+}
+
+#modeToggle {
+    background-color: #6c5ce7;  /* Purple */
+}
+
+#modeToggle:hover {
+    background-color: #5f4dd1;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.2);
+}
+
+/* Active states */
+#start.active {
+    background-color: #00a187;
+    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.3);
+}
+
+#reset.active {
+    background-color: #e66867;
+    box-shadow: 0 5px 15px rgba(255, 118, 117, 0.3);
+}
+
+#modeToggle.active {
+    background-color: #5f4dd1;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+.status {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #666;
+} 
